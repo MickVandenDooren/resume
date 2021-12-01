@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<div class="sidenav">
+
+<div class="myImg">
+<img src="images/profile.png" alt="Avatar">
+</div>	
+
+<h3>Contact me</h3>
+
+	<div class="contactform">
+		<div class="call"><a href="tel:0032472797943"><i class="fas fa-phone"></i><span>&nbsp(+32)472/79.79.43</span></a></div>
+		<div class="email"><a href="mailto:mickvdd@gmail.com"><i class="fas fa-envelope"></i><span>&nbspmickvdd@gmail.com</span></a></div>
+		<div class="address"><a href="https://www.google.be/maps/place/9420+Erpe-Mere/@50.914844,3.8819255,12z/data=!3m1!4b1!4m5!3m4!1s0x47c3a2f78ef2bad9:0x6d4f927f52e23e0!8m2!3d50.914137!4d3.9568328"><i class="fas fa-map-marker"></i><span>&nbspErpe-Mere, Belgium</span></a>
+	</div>	
+</div>
+
+<h3>Follow me</h3>
+	<div class="socialmedia">
+		<div class="box">
+			<a href="https://www.facebook.com/MickVandenDooren" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.instagram.com/mick_met_ck/" target="_blank"><i class="fab fa-instagram "></i></a>
+			<a href="https://github.com/MickVandenDooren/IceCreamShop_Taak" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/mick-van-den-dooren-480b02b2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+	</div>
+	</div>
+
+<h3>Download PDF</h3>
+<button class="button" href="no-script.html" id="btnDownload"><i class="fa fa-download"></i>&nbspDownload</button>
+<script>
+$(document).ready(function(){
+		$('#btnDownload').click(function(e){
+			e.preventDefault();
+			window.location.href = "Resume_MickVandenDooren.pdf";
+		});
+
+
+		$(".skills-prog li")
+    .find(".skills-bar")
+    .each(function(i) {
+      $(this)
+        .find(".bar")
+        .delay(i * 150)
+        .animate(
+          {
+            width:
+              $(this)
+                .parents()
+                .attr("data-percent") + "%"
+          },
+          1000,
+          "linear",
+          function() {
+            return $(this).css({
+              "transition-duration": ".5s"
+            });
+          }
+        );
+
+	});
+});
+
+</script>
+</div>
+
+
+<div class="main">
+
+
+
+
+<body>
+<h1> Mick Van den Dooren </h1>
+
+<p>
+<quote>
+JAVA Developer in training with a demonstrated history of working in IT-Support within the Retail Sector.
+Adventurous and charismatic problem-solver interested in scuba-diving, coaching youth football & playing chess.
+</quote>
+</p>
+
+<div class="smallbox"> <i class="fa fa-desktop" aria-hidden="true"></i> IT skills </div>
+
+<ul>
+	<p>Network, Windows OS, OSX, VPN, Oracle, <br>Point of Sale & Cashiering Systems, SAP F&R - ERP </p>
+	<p>JAVA Programming</p>
+	<li> Eclipse </li>
+	<li> JAVA Basic - OO </li>
+	<li> DB-Systems - Webserver </li>
+	<li> MySQL </li>
+	<li> SQL </li>
+	<li> JDBC </li>
+	<li> Hibernate </li>
+	<li> Tomcat </li>
+	<p> Object Oriented System Analysis</p>
+	<li> UML </li>
+	<li> Agile & Scrum </li>
+	<li> HTML5 </li>
+	<li> CSS </li>
+	<li> JavaScript/jQuery</li>
+	<li> JSP/Servlets</li>
+	<li> JSF </li>
+	<li> Spring/MVC </li>
+	<li> XML/XSD/XSLT </li>
+	<li> JUnit </li>
+	<li> Maven </li>
+</ul>
+
+
+<div class="smallbox"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education </div>
+
+<ul>
+	<li>JAVA IoT Development - INTEC Brussel (2021-2022)</li>
+	<li>Applied Sciences IT  - Hogeschool Gent (2011-2014) [DNF]</li>
+	<li>Informaticabeheer - SMI Aalst (2008-2010)</li>
+
+</ul>
+
+<p>
+<div class="smallbox"><i class="fa fa-briefcase" aria-hidden="true"></i> Experience </div> </p>
+
+
+<ul>
+	<li>IT-Project Manager - Aldi Nord Belgium (April 2015- December 2020)
+<p>
+Managed multiple IT-Projects (VPN Stores Luxembourg, Warehouse Setups, SAP Launches) 
+while also working as IT Support for ALDI-colleagues across nationwide stores, warehouses and distribution centers.
+</p>
+</li>
+	<li>IT-Support  - National Bank of Belgium (Summer 2013-2014)</li>
+<p>
+Internship working within IT-department supporting colleagues with their day-to-day computer needs.
+</p>
+	<li>Media Analysis (Summer 2012)</li>
+<p>
+Summer internship analyzing and publishing all articles from (inter)national media concerning the company and its market. 
+</p>
+</ul>
+
+<div class="smallbox"><i class="fa fa-futbol" aria-hidden="true"></i> Interests </div>
+
+<ul>
+
+	<li>UEFA B Football Coach (U-19 & National Talent Scout)
+	</li>
+<p></p>
+	<li>Scuba Diving (PADI Open Water & Adventure Diver)
+	</li>
+<p></p>
+	<li>Chess (1500 rating)
+	</li>
+
+</ul>
+
+<div class="smallbox"><i class="fa fa-language" aria-hidden="true"></i> Languages </div> </p>
+
+<div class="skills-prog">
+	<ul>
+	  <li data-percent="100"><span>Dutch</span>
+		<div class="skills-bar">
+		  <div class="bar"></div>
+		</div>
+	  </li>
+	  <li data-percent="95"><span>English</span>
+		<div class="skills-bar">
+		  <div class="bar"></div>
+		</div>
+	  </li>
+	  <li data-percent="75"><span>French</span>
+		<div class="skills-bar">
+		  <div class="bar"></div>
+		</div>
+	  </li>
+	  <li data-percent="50"><span>German</span>
+		<div class="skills-bar">
+		  <div class="bar"></div>
+		</div>
+	  </li>
+	</ul>
+  </div>
+
+</body>
+</div>
+
+</html>

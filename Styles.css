@@ -1,0 +1,214 @@
+/*
+darkest-blue: #1A237E
+darker-blue: #283593
+dark-blue: #303F9F
+medium-blue: #3949AB
+light-blue: #3F51B5
+lighter-blue: #5C6BC0
+lightest-blue: #9FA8DA
+white: #FFFFFF
+black: #0E1442
+orange: #FFB300
+yellow: #FDD835
+dark-pink: #AD1457
+light-pink: #D81B60
+*/
+
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0px; /* From top */
+  left: 0;
+  background-color: #32527B;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 50px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1A237E; 
+  display: block;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #FDD835;
+}
+
+.material-icons{
+  font-size: 35px;
+  color: #1A237E;
+}
+
+
+.sidenav .myImg img {
+  border-radius: 50%;
+  max-width: 80%;  
+  height: auto;
+  margin-left: 10%;  
+  border: solid 5px #FFB300;
+}
+
+.sidenav h3 {
+  color: #FFB300;
+  margin: 10px 0;
+  font-size: 1.25em;
+  margin-left: 10%;
+}
+
+.sidenav .socialmedia .box {
+  text-align: center;
+  vertical-align: middle;
+}
+.sidenav .socialmedia .box a {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.sidenav .socialmedia .box a:hover i {
+  background: $yellow;
+  border-radius: 5px;
+  transform: rotate(45deg) scale(0.8);
+}
+.sidenav .socialmedia .box a:hover i::before {
+  transform: rotate(-45deg) scale(1.5);
+}
+.sidenav .socialmedia .box i{
+  display: inline-block;
+  font-size: 30px;
+  background: $orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  color: $darker-blue;
+  margin: 0 10px 10px 10px;
+  transition-duration: 0.7s;
+}
+
+.sidenav .socialmedia .box:before {
+  transition-duration: 0.7s;
+}
+.sidenav .socialmedia .box i.fa::before {
+  display: block;
+}
+
+.button {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+/* Darker background on mouse-over */
+.button:hover {
+  background-color: RoyalBlue;
+}
+
+
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+  width: 600px; /* As in assignment (800 total -200 sidenav) */
+}
+
+.smallbox {
+  border: solid 1px #FDD835;
+  padding:5px;
+  background-color: #FDD835;
+  opacity: 0.9;
+  font-weight: bold;
+  color: #32527B;
+}
+
+body {
+  background-image: linear-gradient(to right, #32527B, #32527B, #153B62, #00264A, #001133);
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+ color: #FbFcFe;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+h1 {
+  color: #FFB300;
+  font-size: 40px;
+}
+
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h3 {
+  color: #FFB300;
+  margin: 10px 0;
+  font-size: 1.25em;
+}
+
+
+quote {
+  color: white;
+  font-style: italic;
+  font-size: 17px;
+} 
+
+.contactform {
+  margin-left: 5%;
+}
+
+.skills-prog {
+  clear: both;
+  padding: 15px;
+}
+.skills-prog ul {
+  margin-left: 15px;
+}
+.skills-prog ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+.skills-prog ul li:hover {
+  color: #FDD835;
+}
+.skills-prog ul li:hover .skills-bar .bar {
+  background: #FDD835;
+  box-shadow: 0 0 0 1px #FDD835;
+}
+.skills-prog ul li span {
+  display: block;
+  width: 120px;
+}
+.skills-prog ul li .skills-bar {
+  background: white;
+  height: 2px;
+  width: calc(100% - 120px);
+  position: relative;
+  border-radius: 2px;
+}
+.skills-prog ul li .skills-bar .bar {
+  position: absolute;
+  top: -1px;
+  height: 4px;
+  background: #FFB300;
+  box-shadow: 0 0 0 #FFB300;
+  border-radius: 5px;
+}
